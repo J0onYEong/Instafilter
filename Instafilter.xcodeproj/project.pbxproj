@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BD1E8A42962C236009DD937 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1E8A32962C236009DD937 /* ImagePicker.swift */; };
 		9BE7698D29614827008DC903 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7698C29614827008DC903 /* InstafilterApp.swift */; };
 		9BE7698F29614827008DC903 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7698E29614827008DC903 /* ContentView.swift */; };
 		9BE7699129614828008DC903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE7699029614828008DC903 /* Assets.xcassets */; };
 		9BE7699529614828008DC903 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE7699429614828008DC903 /* Preview Assets.xcassets */; };
+		9BF3DAE72966A8FA001C09BA /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3DAE62966A8FA001C09BA /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BD1E8A32962C236009DD937 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9BE7698929614827008DC903 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE7698C29614827008DC903 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		9BE7698E29614827008DC903 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9BE7699029614828008DC903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BE7699229614828008DC903 /* Instafilter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Instafilter.entitlements; sourceTree = "<group>"; };
 		9BE7699429614828008DC903 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BF3DAE62966A8FA001C09BA /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				9BE7698C29614827008DC903 /* InstafilterApp.swift */,
 				9BE7698E29614827008DC903 /* ContentView.swift */,
+				9BF3DAE62966A8FA001C09BA /* ImageSaver.swift */,
+				9BD1E8A32962C236009DD937 /* ImagePicker.swift */,
 				9BE7699029614828008DC903 /* Assets.xcassets */,
 				9BE7699229614828008DC903 /* Instafilter.entitlements */,
 				9BE7699329614828008DC903 /* Preview Content */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD1E8A42962C236009DD937 /* ImagePicker.swift in Sources */,
 				9BE7698F29614827008DC903 /* ContentView.swift in Sources */,
 				9BE7698D29614827008DC903 /* InstafilterApp.swift in Sources */,
+				9BF3DAE72966A8FA001C09BA /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +275,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Instafilter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -303,6 +312,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Instafilter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
